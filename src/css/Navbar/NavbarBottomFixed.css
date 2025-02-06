@@ -1,0 +1,75 @@
+
+
+
+@media (max-width: 1080px) {
+
+    .NavbarBottomFixed {
+        position: fixed;
+        bottom: 0%;
+        background-color: var(--main-white-color);
+        width: 100%;
+        z-index: 998;
+        /* background-color: aqua ; */
+        padding: 0.5rem 4rem ;
+    }
+
+    .navbar-bottom-container {
+        /* background-color: red   ; */
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    .nav-bottom-icon-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background-color: #B9A16B; */
+        justify-content: flex-end;
+        gap: 0.5rem;
+
+    }
+    
+    #home-mobile-size-icon-fixed-navbar {
+        font-size: 1.5rem;
+        font-weight: 200;
+        color: var(--main-color);
+        cursor: pointer;
+
+    }
+
+    .nav-bottom-heart-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /* background-color: bluevi olet; */
+        position: relative;
+        cursor: pointer;
+        
+    }
+
+    .nav-bottom-icon-container h6 {
+        font-size: 0.85rem;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-bottom-heart-container::after {
+        content: '0';
+        font-size: 0.65rem;
+        position: absolute;
+        color: aliceblue;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: #B9A16B;
+        top: 15%;
+        padding: 8px;
+        right: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+}

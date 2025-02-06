@@ -1,0 +1,274 @@
+#Navbar {
+    
+    width: 100%;
+    background-color:var(--main-white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 4rem;
+    /* background-color: red; */
+    z-index: 1000;
+    position: fixed;
+    transition: top 0.3s ease-in-out;
+
+
+
+
+}
+
+
+
+
+.nav-container {
+    width: 100%;
+    /* background-color: aliceblue; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+
+}
+
+.nav-logo-and-btn-container {
+    
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    
+
+
+}
+
+
+
+
+.nav-logo-container img {
+    max-height: 133px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.navigation-btn-container-dsk-top {
+    display: flex;
+    align-items: center;
+    /* background-color: blue; */
+
+}
+.navigation-btn-container-dsk-top ul {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.navigation-btn-container-dsk-top ul li {
+    list-style: none;
+    font-size: 0.90rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+}
+
+.nav-icons-container {
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+    gap: 1.7rem;  
+}
+
+.nav-icons-container i {
+  cursor: pointer;
+}
+
+.nav-icons-dsk-top {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    /* background-color: blue; */
+
+}
+
+.nav-icons-dsk-top i {
+    font-size: 1.5rem;
+    font-weight: 100 !important;
+
+}
+
+
+.nav-wish-list-container {
+    display: flex;
+    align-items: center;
+    /* background-color: blueviolet; */
+    position: relative;
+    cursor: pointer;
+    padding: 0.7rem;
+
+}
+
+.nav-wish-list-container::after {
+      content: attr(data-count);
+    font-size: 0.65rem;
+    position: absolute;
+    color: aliceblue;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #B9A16B;
+    bottom: 20%;
+    padding: 8px;
+    right:  10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav-wish-list-container i{
+    font-size: 1.5rem;
+    font-weight: 100 !important;
+
+
+
+}
+
+.nav-menu-icon {
+    
+    font-size: 1.5rem;
+    font-weight: 100 !important;
+    cursor: pointer;
+
+
+}
+
+
+
+
+
+/* SEACRH BOX  */
+
+
+
+.search-container {
+    opacity: 0;
+    height: 55vh;
+    width: 100%;
+    padding: 2% 4%; /* div-for-all-components */
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-white-color);
+    gap: 2rem;
+    position: absolute;
+    /* z-index: 999; */
+    top: 100%;
+    transition: opacity 0.3s ease-in;
+  
+  
+  }
+
+  .search-container-animation {
+    opacity: 1;
+  }
+  
+  .search-container h5 {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    font-weight:500 ;
+    color: var(--opacity-grey);
+  }
+  
+  
+  
+  
+  .input-container {
+    /* background-color: aqua; */
+    width: 100%;
+    padding: 0.5rem 0;
+    border-bottom: 3px solid var(--opacity-grey);
+    display: flex;
+  
+  
+  }
+  .input-container i {
+    font-size: 1.7rem;
+    color: var(--opacity-grey);
+  }
+  
+  .input-container input {
+    border: none;
+    background-color: var(--main-white-color);
+    width: 100%;
+    font-size: 0.95rem;
+    font-weight: 600;
+    outline: none; /* Removes outline on all states */
+  }
+  
+  
+  .suggestion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .suggestion-container h4 {
+  
+    
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    font-weight:500 ;
+    color: var(--opacity-grey);
+  
+  }
+  
+  
+  .suggestion-queue-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    overflow: visible;
+    /* background-color: aqua; */
+    padding-bottom: 2rem;
+  
+  }
+  
+  
+  .suggestion-queue {
+    overflow: visible;
+  }
+  
+  .suggestion-queue h5 {
+    font-weight: 400;
+    font-size: 0.95rem;
+    text-transform: capitalize;
+    color: var(--light-black-color);
+    overflow: visible;
+  
+  }
+
+  
+  
+
+@media (max-width: 1080px) {
+    #Navbar {
+        padding: 0rem 1rem;
+    
+    
+    }
+
+
+
+   
+
+
+}
+
+@media (max-width: 768px) {
+
+
+}
+
+.DISPLAY-NONE {
+    display: none;
+}

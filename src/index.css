@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+    font-family: "Jost", sans-serif;
+
+}
+
+h4 {
+  margin: 0;
+}
+
+
+
+:root {
+    --main-white-color: #FFFFFF;
+    --main-color: #545454;
+    --dark-black-color: #222222;
+    --light-black-color: #222222;
+    --opacity-grey: #777777;
+    --light-pink-color: #F5E6E0;
+    --soft-red-color: #C32941;
+    --low-opacity-color: #E4E4E4;
+
+    --bs-accordion-border-color: transparent;
+    --bs-accordion-border-width: 0;
+
+
+    --bs-offcanvas-padding-x : 2rem;
+    --bs-offcanvas-padding-y : 2rem
+}
+
+
+
+html {
+    font-family: "Jost", sans-serif;
+    
+    color: var(--main-color);
+
+}
+
+
+
+
+.button-with-line {
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--light-black-color);
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: visible;
+  }
+  
+  .button-with-line:after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    transform: scaleX(0.7);
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--light-black-color);
+    transition: transform 0.25s ease-out;
+    transform-origin: bottom left; /* Ensure it animates correctly */
+  }
+  
+  .button-with-line:hover::after {
+    transform: scaleX(1.1);
+    color: var(--light-black-color);
+  }
+  
+
+  
+.underline-animation {
+  position: relative;
+  cursor: pointer;
+  color: var(--light-black-color);
+  display: inline-block;
+  overflow: visible;
+}
+
+
+.underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  transform: scaleX(0) scaleY(1);
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--light-black-color);
+  transition: transform 0.25s ease-out;
+  transform-origin: bottom left; /* Ensure it animates correctly */
+}
+
+
+.underline-animation:hover::after {
+  color: var(--light-black-color) !important;
+
+  transform: scaleX(1) scaleY(1);
+      color: var(--light-black-color);
+
+
+}
+
+
+/* half */
+
+.underline-animation-half {
+  position: relative;
+  cursor: pointer;
+  color: var(--light-black-color);
+  display: inline-block;
+  overflow: visible;
+}
+
+
+.underline-animation-half:after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  transform: scaleX(0.7);
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--light-black-color);
+  transition: transform 0.25s ease-out;
+  transform-origin: bottom left; /* Ensure it animates correctly */
+}
+
+
+.underline-animation-half:hover::after {
+      transform: scaleX(1.1);
+      color: var(--light-black-color);
+
+
+}
+
+
+
+
+
+/* side bar css */
+
+.nav-background-fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  transition: opacity 1s ease;
+  opacity: 0;
+}
+
+.nav-background-fade-animation {
+  opacity: 1;
+}
+
+.right-side-page {
+  position: fixed;
+  top: 0;
+  right: -28vw;
+  width: 28vw;
+  height: 100vh;
+  background-color: var(--main-white-color);
+  z-index: 1001;
+  transition: right 0.3s ease;
+}
+
+.right-side-page-close-animation {
+  right: -25vw !important;
+
+
+}
+
+.right-side-page-animation {
+  right: 0;
+}
+
+
+
+
+/* side bar bootstrap */
+
+
+
+.offcanvas-header {
+  background-color: #FAF9F8;
+  padding: 2rem 2rem !important;
+}
+
+.offcanvas-header h5 {
+  color: black  ;
+  margin: 0;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+}
+
+
+.btn-close {
+  color: var(--dark-black-color);
+  --bs-btn-close-focus-shadow: none !important;
+  opacity: 0.9 !important;
+}
+
+@media (max-width: 1080px) {
+
+  
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.ACTIVE-BOX {
+  display: block !important;
+}
+.DISABLE-BOX {
+  display: none !important;
+}

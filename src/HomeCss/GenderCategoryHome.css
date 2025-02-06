@@ -1,0 +1,160 @@
+#GenderCategoryHome {
+
+    min-height: 60vh;
+
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    padding: 2rem 6rem;
+
+
+
+
+}
+
+
+.gender-container {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+
+
+    /* background-color: black; */
+}
+
+
+
+.gender-left-container {
+    background-image: url("/banner-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 100%;
+    width: calc(100% - 50%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 2rem;
+
+}
+
+.gender-color-white {
+    color: white !important
+}
+
+
+.underline-animation-white:after {
+
+    background-color: white;
+
+
+
+}
+
+.gender-right-container {
+    
+    background-image: url("/banner-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 100%;
+    width: calc(100% - 50%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+    #GenderCategoryHome {
+        min-height: 80vh;
+        /* background-color: blue; */
+
+        padding: 1rem 3rem;
+
+    
+    }
+
+    .gender-container {
+    flex-direction: column;
+    gap: 2rem;
+    
+    }
+
+    .gender-left-container {
+
+        width: 100%;
+        background-position: 60%;
+
+
+    
+    
+    }
+
+    
+    .gender-right-container {
+        background-position: 60%;
+
+
+        width: 100%;
+
+    
+    
+    }
+
+    .gender-right-container {
+        margin-bottom: 2rem;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    #GenderCategoryHome {
+        min-height: 70vh;
+    padding: 0rem 1rem;
+
+    
+    }
+
+    .gender-container {
+    flex-direction: column;
+    gap: 2rem;
+    
+    }
+
+    .gender-left-container {
+        background-position: 60%;
+
+
+        width: 100%;
+
+    
+    
+    }
+
+    
+    .gender-right-container {
+        background-position: 60%;
+
+
+        width: 100%;
+
+    
+    
+    }
+
+    .gender-right-container {
+        margin-bottom: 2rem;
+    }
+
+
+
+}

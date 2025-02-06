@@ -1,0 +1,92 @@
+#ShopHero {
+    width: 100%;
+  height: 60vh;
+  background-color: var(--main-white-color);
+  padding: 2rem 0rem;
+  padding-top: 0rem;
+  /* background-color: red; */
+  margin-top: 6rem;
+
+}
+
+.shop-hero-line {
+    width: 100%;
+  height: 100%;
+  border: 1px solid rgba(119, 119, 119, 0.3);
+  padding: 0.5rem;
+}
+
+.shop-hero-container {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.shop-hero-content-container {
+    /* background-color: aqua; */
+    padding-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+
+}
+
+.shop-hero-content-container h3 {
+    font-size: 5.1rem;
+    font-weight: 800;
+    color: #EFEFEF;
+    /* background-color: aqua; */
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.05em #777777;
+    paint-order: stroke fill;
+}
+
+.shop-hero-btn-container {
+    display: flex;
+    /* background-color: aqua; */
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+}
+
+.shop-hero-btn-container h5 {
+    margin: 0;
+}
+
+
+@media (max-width: 1080px) {
+    #ShopHero {
+    margin-top: 4rem;
+    }
+
+
+}
+
+
+@media (max-width: 768px) {
+
+    .shop-hero-content-container h3 {
+
+        font-size: 3rem
+    
+    
+    }
+
+    .shop-hero-content-container {
+        padding-left: 1rem;
+    
+    }
+
+    
+
+}

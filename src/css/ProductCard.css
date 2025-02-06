@@ -1,0 +1,236 @@
+#ProductCard {
+    /* background-color: aqua; */
+
+}
+
+p {
+    margin: 0;
+}
+
+.swiper-button-prev {
+    top: 50% !important;
+
+
+}
+
+.swiper-button-next {
+    top: 50% !important;
+
+
+}
+
+.swiper-button-prev::after {
+    font-size: 0.95rem !important;
+    color: transparent;
+    font-weight: 600;
+    transition: color 0.3s ease-in;
+
+}
+.swiper-button-next::after {
+    font-size: 0.95rem !important;
+    color: transparent;
+    font-weight: 600;
+    transition: color 0.3s ease-in;
+}
+
+.product-card-img-container {
+    height: 0;
+    padding-top: 120%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.product-card-swiper-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:  100%;
+
+}
+
+.swiper-product-card {
+    width: 100%;
+    height:  100%;
+    /* position: relative; */
+    /* background-color: red; */
+}
+
+.swiper-product-card img{
+    height: 100%;
+    width: 100%;
+
+}
+
+.product-card-img-one {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:  100%;
+    object-fit: cover;
+    cursor: pointer;
+
+}
+
+.product-card-img-one-swiper {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:  100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.product-card-img-two-swiper {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:  100%;
+    object-fit: cover;
+    cursor: pointer;
+
+}
+.product-card-img-two-opacity-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:  100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in;
+
+}
+
+.product-card-img-container:hover .product-card-img-two-opacity-img  {
+    opacity: 0;
+}
+
+.product-card-img-container:hover .swiper-button-next::after,
+.product-card-img-container:hover .swiper-button-prev::after {
+    color: var(--dark-black-color);
+}
+
+
+.product-card-addToCart-container {
+    position: absolute;
+
+    background-color: var(--main-white-color);
+    padding:   1rem;
+    width: 90%;
+
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    z-index: 1;
+    bottom: 0;
+    transform: translateY(0);
+    transition: transform 0.3s ease , opacity 0.3s ease;
+    opacity: 0;
+    cursor: pointer;
+
+}
+
+.product-card-addToCart-container p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    /* background-color: blue; */
+    margin: 0;
+}
+
+.product-card-img-container:hover   .product-card-addToCart-container {
+    /* background-color: aqua; */
+    transform: translateY(-20px);
+    opacity: 1;
+
+}
+
+
+
+.product-card-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+    margin: 1rem 0.5rem;
+}
+
+.product-card-category-wishList-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: aqua; */
+
+}
+
+.product-card-category-wishList-container p {
+    font-size: 0.95rem;
+    color: var(--opacity-grey);
+    font-weight: 400;
+}
+
+.product-card-category-wishList-container i {
+    font-size: 1.1rem;
+    color: var(--opacity-grey);
+}
+
+.product-card-title-price-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+
+}
+
+.product-card-title-price-container h6 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--dark-black-color);
+    margin: 0;
+
+}
+
+.product-card-title-price-container p {
+    font-size: 0.98rem;
+    font-weight: 400;
+
+}
+
+.product-card-reviews-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    /* background-color: aqua; */
+    gap: 0.5rem;
+
+} 
+
+.reviews-stars-container {
+    display: flex;
+    align-items: center;
+}
+
+.product-card-reviews-container p {
+    font-size: 0.78rem;
+    color: var(--opacity-grey);
+}
+
+.reviews-stars-container i {
+    color: #FFC78B;
+    font-size: 0.78rem;
+
+}

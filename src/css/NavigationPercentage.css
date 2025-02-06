@@ -1,0 +1,44 @@
+#NavigationPercentage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0rem;
+}
+
+#NavigationPercentage h6 {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--dark-black-color);
+    margin-bottom: 0.9rem;
+
+}
+
+.navigation-bar-custom-with-percent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+}
+.navigation-bar-custom-with-percent h6{
+    padding-left: 33%;
+    font-size: 0.95rem;
+    font-weight: 400;
+
+
+}
+.navigation-bar-container-wrapper {
+    width: 20rem;
+    height: 0.45rem;
+    background-color: var(--low-opacity-color);
+    border-radius: 20px;
+    position: relative;
+}
+.navigation-bar-container {
+    position: absolute;
+    height: 100%;
+    width: 39%;
+    background-color: var(--dark-black-color);
+    border-radius: 20px;
+
+
+}

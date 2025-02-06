@@ -1,0 +1,212 @@
+.nav-login-container {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+
+.login-details-side-container {
+  width: 100%;
+  height: calc(100% - 10%);
+  background-color: var(--main-white-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.login-details-side-container {
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+}
+
+.login-details-side-container-form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  gap: 2rem;
+  /* background-color: red; */
+}
+
+.password-input-container {
+  width: 100%;
+  position: relative;
+}
+.password-input-container input {
+  width: 100%;
+  transition: 0.15s all ease;
+  padding: 1rem 1rem;
+  /* text-align: center; */
+  /* background-color: red; */
+  border-radius: 0px;
+  border: 2px solid #E4E4E4;
+}
+
+.password-input-container input:focus {
+  border: 2px solid black;
+
+  outline: none;
+}
+
+.password-input-container .form-label {
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  transform: translate(0px, -2.5rem);
+  padding: 0 5px;
+  pointer-events: none;
+  text-align: center;
+
+  color: var(--opacity-grey);
+  font-size: 14px;
+  font-weight: 400;
+  background-color: var(--main-white-color);
+}
+
+.username-input-container {
+  width: 100%;
+  position: relative;
+}
+.username-input-container input {
+  width: 100%;
+  transition: 0.15s all ease;
+  padding: 1rem 1rem;
+  /* text-align: center; */
+  /* background-color: red; */
+  border-radius: 0px;
+  border: 2px solid #E4E4E4;
+}
+
+.username-input-container input:focus {
+  border: 2px solid black;
+
+  outline: none;
+  /* border: transparent; */
+}
+
+.username-input-container .form-label {
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  transform: translateY(-50%);
+  padding: 0 5px;
+  transition: 0.3s all ease;
+  pointer-events: none;
+  text-align: center;
+
+  color: var(--opacity-grey);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.username-input-container input:focus + .form-label,
+.username-input-container input:not(:placeholder-shown) + .form-label {
+  transform: translate(0px, -2.5rem);
+  background-color: var(--main-white-color);
+  color: black;
+}
+
+.remember-and-lost-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: aqua; */
+}
+
+.remember-me-container {
+  display: flex;
+  align-items:  center;
+  gap: 0.5rem;
+}
+
+.remember-me-container input[type="checkbox"] {
+  width: 20px; /* Set the width of the checkbox to take full width of the container */
+  height: 20px; /* Set the height of the checkbox to take full height of the container */
+  border-radius: 0; /* Ensure the checkbox is square */
+  appearance: none; /* Remove default checkbox styling */
+  -webkit-appearance: none; /* Remove default checkbox styling for Safari */
+  outline: none; /* Remove focus outline */
+  cursor: pointer; /* Change cursor to pointer */
+  border: 2px solid  rgba(119, 119, 119, 0.5); /* Black outline for the checkbox */
+  position: relative;
+}
+
+.remember-me-container input[type="checkbox"]::after {
+  content: "";
+  height: 11px;
+  width: 11px;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  outline: none;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.remember-me-container input[type="checkbox"]:checked::after {
+  opacity: 1; /* Show the pseudo-element */
+  visibility: visible; /* Ensure the pseudo-element is visible */
+}
+
+.remember-me-container input[type="checkbox"]:checked {
+  border: 2px solid black; /* Change border to black when checked */
+}
+
+.remember-me-container  p{
+    font-size: 0.85rem;
+    font-weight: 500;
+    color:  rgba(119, 119, 119, 0.7);
+
+}
+
+.remember-and-lost-container h6 {
+    margin: 0;
+    padding: 0;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: var(--dark-black-color);
+    text-decoration: underline;
+
+
+}
+
+.submit-container {
+    
+    background-color: var(--dark-black-color);
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+
+.submit-container p {
+    font-size: 0.95rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    /* background-color: blue; */
+    margin: 0;
+    color: var(--main-white-color);
+}
+
+
+.login-find-account {
+    font-size: 0.95rem;
+    color:  rgba(119, 119, 119, 0.9);
+
+
+    font-weight: 400;
+
+}
+
+.login-find-account span {
+    color: var(--dark-black-color);
+    text-decoration: underline;
+    cursor: pointer;
+}

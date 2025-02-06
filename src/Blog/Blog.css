@@ -1,0 +1,259 @@
+#Blog {
+    width: 100%;
+  height: 60vh;
+  background-color: #EFEFEF;
+  margin-top: 6rem;
+
+
+}
+
+.blog-img-wrapper {
+    width: 100%;
+    background-image: url("\hero.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+
+
+
+
+}
+
+.blog-content-container {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 4rem;
+
+}
+
+.blog-content-container h4 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--dark-black-color);
+    /* background-color: aqua; */
+    text-transform: uppercase;
+}
+
+.blog-btn-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+
+#blogs-display-container {
+    padding: 2rem 4rem;
+}
+.blog-thumbnail-container {
+    width: 100%;
+}
+
+
+.blog-thumbnail-img {
+    padding-top: 70%;
+    height: 0;
+    position: relative;
+}
+
+.blog-thumbnail-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.blog-thumnail-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.blog-thumnnail-date-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:0.5rem ;
+    width: 100%;
+}
+
+.blog-thumnnail-date-container h6 {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: var(--opacity-grey);
+
+}
+
+.blog-thumnail-content h5{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--dark-black-color);
+    margin-bottom: 1rem;
+
+
+}
+
+.blog-description-display {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: var(--dark-black-color);
+    margin-bottom: 1rem;
+
+}
+
+
+/* blog */
+
+#blog-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 4rem;
+    padding-bottom: 5rem;
+    margin-top: 6rem;
+
+}
+
+.blog-title-container {
+    width: 100%;
+}
+
+.blog-title-container h3 {
+    color: var(--dark-black-color);
+    font-weight: 600;
+    font-size: 3rem;
+    width: 50%;
+
+}
+
+.blog-date-and-author-contianer {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+.blog-date-and-author-contianer h6 {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: var(--opacity-grey);
+
+
+}
+
+
+.img-blog-img {
+    width: 100%;
+    height: 50vh;
+}
+
+.img-blog-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.blog-content-btn-container {
+    /* background-color: red; */
+    width: 100%;
+    padding: 4rem 0rem;
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border-bottom: 1px solid var(--low-opacity-color);
+    gap: 1rem;
+    flex-wrap: wrap;
+
+}
+
+.blog-content-btn {
+    padding: 1rem 2rem;
+    background-color: red;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem   ;
+    color: var(--main-white-color);
+}
+
+.blog-content-btn h6 {
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+.blog-navigation-container {
+    width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-bottom: 4rem;
+    border-bottom: 1px solid var(--low-opacity-color);
+
+
+}
+
+.blog-navigation {
+    display: flex;
+    align-items: center;
+    color: var(--dark-black-color);
+    cursor: pointer;
+
+    
+}
+
+.blog-navigation h6 {
+    font-size: 1.1  rem;
+    font-weight: 400;
+
+
+}
+
+@media (max-width: 1080px) {
+    .blog-content-container {
+    padding: 2rem 2rem;
+    }
+    #blogs-display-container {
+    padding: 2rem 2rem;
+    
+    }
+    #blog-section {
+    padding: 2rem 2rem;
+    }
+    .blog-title-container h3 {
+    width: 80%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .blog-content-container {
+        padding: 2rem 1rem;
+        }
+
+        #blogs-display-container {
+            padding: 2rem 1rem;
+            
+            }
+    #blog-section {
+        padding: 2rem 1rem;
+    }
+    .blog-title-container h3 {
+        width: 100%;
+    }
+    #blog-section {
+    margin-top: 4rem ;
+    }
+
+}

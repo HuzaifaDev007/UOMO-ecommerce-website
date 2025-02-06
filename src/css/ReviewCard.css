@@ -1,0 +1,49 @@
+
+
+.review-card-container {
+    width: 100%;
+    /* background-color: red; */
+    padding: 2rem 0rem;
+    border-bottom: 2px solid #E4E4E4;
+}
+
+.review-card-detail-container {
+    width: 100%;
+}
+
+
+.review-date-container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* background-color: red; */
+}
+
+.review-date-container p {
+    font-size: 0.98rem;
+    font-weight: 300;
+    color: var(--main-color);
+
+
+}
+
+.review-pic-container {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #E4E4E4;
+}
+
+.review-card-detail-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.review-card-detail-container-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+}

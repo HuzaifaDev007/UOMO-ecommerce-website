@@ -1,0 +1,228 @@
+#LimitedHomeSection {
+
+        min-height: 80vh;
+
+        width: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0rem;
+
+    
+
+    
+}
+
+
+.limited-container {
+    flex: 0 1 93%;  /* This will take up 90% of the available space */
+
+
+    width: 100%;
+    background-image: url("/deal_timer_bg.jpg");
+    background-size: cover; /* Ensure the image covers the container */
+    background-repeat: no-repeat; /* Prevent tiling of the image */
+    background-position: 60%;
+
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+
+}
+
+.limited-right-section {
+    width: calc(100%);
+    height: 80%;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem;
+   
+  }
+
+  .limited-title-container {
+    min-height: 0rem !important;
+  }
+
+  .limited-title-container h4 {
+    font-size: 5rem;
+    font-weight: 600;
+    }
+
+    .limited-title-container span {
+        font-weight: 500 !important;
+    
+    
+    }
+
+
+  .limited-timer-container {
+    /* background-color: aqua; */
+    display: flex;
+    width: 100%;
+    height: 20%;
+    gap: 1rem;
+    align-items: flex-start ;
+    padding: 2rem;
+    padding-top: 0rem;
+    
+  }
+
+  .time-date-container {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+   #colon {
+
+    font-size: 2rem;
+    color: var(--dark-black-color);
+    font-weight: 600;
+    padding: 0 1rem;
+    /* background-color: bisque; */
+  
+
+}
+
+  .time-date-container span {
+    font-size: 2rem;
+    color: var(--dark-black-color);
+    font-weight: 400;
+  
+
+}
+.time-date-container p {
+
+    font-size: 1.3rem;
+    color: var(--opacity-grey);
+    font-weight: 600;
+    text-transform: uppercase;
+
+
+}
+
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    #LimitedHomeSection {
+        padding: 1rem;
+        min-height: 50vh;
+        
+
+
+
+    
+    
+    }
+
+    .limited-container {
+        flex: 0 1 93%;  /* This will take up 90% of the available space */
+
+        background-size: cover; /* Ensure the image covers the container */
+
+    
+    }
+
+    .limited-right-section {
+        justify-content: center;
+        padding-top: 2rem;
+        gap: 1rem;
+        /* background-color: black; */
+    
+    
+    }
+
+    .limited-timer-container {
+        margin-bottom: 1rem;
+        
+        }
+
+
+    .limited-title-container {
+    height: auto !important;
+    }
+
+
+    .limited-title-container h4 {
+        font-size: 4rem;
+        }
+  
+    
+
+   }
+
+
+  @media (max-width: 768px) {
+
+    #LimitedHomeSection {
+        padding: 1rem;
+        min-height: 50vh;
+
+
+
+    
+    
+    }
+
+    .limited-container {
+        flex: 0 1 100%;  /* This will take up 90% of the available space */
+
+        background-size: cover; /* Ensure the image covers the container */
+
+    
+    }
+
+    .limited-right-section {
+        justify-content: center;
+        padding-top: 2rem;
+        gap: 1rem;
+        padding: 0;
+        padding-left: 0.5rem
+    
+    
+    }
+
+    .limited-title-container {
+    height: auto !important;
+    }
+
+    .limited-title-container h4 {
+        font-size: 2.8rem;
+        }
+
+
+        .limited-timer-container {
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        padding: 0;
+        padding-left: 0.5rem
+        
+        }
+
+        #colon {
+        font-size: 1.5rem;
+        padding: 0 0.5rem;
+
+
+        
+        }
+
+        .time-date-container span {
+            font-size: 1.5rem;
+          
+        
+        }
+
+        .time-date-container p {
+        
+        font-size: 1rem;
+        }
+  
+
+
+}

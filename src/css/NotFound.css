@@ -1,0 +1,76 @@
+#NotFound {
+    padding: 4rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.notfound-container {
+    width: 55rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.notfound-container h3 {
+    font-size: 5rem;
+    color: var(--dark-black-color);
+    font-weight: 800;
+    text-align: center;
+
+
+}
+
+.notfound-container h6 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    max-width: 100%;
+    color: var(--dark-black-color);
+    margin-bottom: 1rem;
+
+}
+
+.notfound-container p {
+    font-size: 0.95rem;
+    font-weight: 400;
+    width: 30rem;
+    text-align: center;
+    max-width: 100%;
+    color: var(--opacity-grey);
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+
+
+}
+
+.go-back-btn-container {
+    width: 18rem;
+    max-width: 60%;
+    background-color: var(--dark-black-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+.go-back-btn-container p {
+    padding: 0;
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--main-white-color);
+
+}
+
+@media (max-width: 1080px) {
+    #NotFound {
+    padding: 2rem;
+    padding-bottom: 4rem;
+    }
+
+}

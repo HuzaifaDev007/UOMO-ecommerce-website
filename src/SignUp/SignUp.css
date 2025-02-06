@@ -1,0 +1,37 @@
+#SignUp{
+    background-color: var(--main-white-color);
+    width: 100%;
+    padding: 3rem 1rem;
+    padding-bottom: 8rem;
+}
+
+.login-page-container {
+    
+    width: 100%;
+}
+
+.login-page-details-container {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+
+}
+
+.login-details-container-container-form {
+    width: 35rem;
+    max-width: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.signUp-policy-container p{
+    color: var(--opacity-grey);
+    font-size: 0.95rem;
+}

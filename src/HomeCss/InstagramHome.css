@@ -1,0 +1,128 @@
+#InstagramHome {
+  width: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 4rem;
+  padding-bottom: 0rem;
+}
+.instagram-title {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--light-black-color);
+}
+
+.instagram-custom-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  /* background-color: blue; */
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-6 {
+  flex: 0 0 calc(16.66666666666667% - 0.5rem);
+  width: calc(16.66666666666667% - 0.5rem);
+}
+
+.instagram-img {
+  /* background-color: pink; */
+  padding-top: calc(100%);
+  /* aspect-ratio: 1 / 1; */
+  position: relative;
+}
+
+.instagram-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+
+}
+
+.instagram-wrapper img {
+    width: 100%;
+  height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.instagram-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease; /* Smooth transition for background */
+}
+
+.instagram-overlay svg {
+  color: white;
+  width: 32px;
+  height: 32px;
+  transition: opacity 0.3s ease; /* Smooth transition for the icon */
+}
+
+.instagram-img:hover .instagram-overlay {
+  opacity: 0.7; /* Shows the gradient overlay */
+  cursor: pointer;
+}
+
+
+@media (max-width: 1080px) {
+
+    #InstagramHome {
+        padding: 1rem;
+        
+        }
+  .custom-4 {
+    flex: 0 0 calc(25% - 1rem);
+    width: calc(25% - 1rem);
+  }
+}
+
+@media (max-width: 768px) {
+
+    #InstagramHome {
+        padding: 1rem;
+        gap: 1rem;
+        
+        }
+
+        .instagram-title {
+            font-size: 2rem;
+        
+        }
+
+        .instagram-custom-row {
+            gap: 1rem;
+        
+        }
+  
+  .custom-3 {
+    flex: 0 0 calc(33.33333333333333% - 1rem);
+    width: calc(33.33333333333333% - 1rem);
+  }
+}
